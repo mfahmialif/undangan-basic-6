@@ -1,0 +1,829 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Undangan Basic 6</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/aos.css" />
+    <link rel="stylesheet" href="assets/css/splide.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/loader.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body class="meirahmawati no-scroll">
+    <!-- Wedding Loader -->
+    <!-- <div id="loader">
+    <div class="heart-loader"></div>
+    <p id="progress-text">Preparing the big day... 0%</p>
+  </div> -->
+
+    <!-- <div class="snowfall-animation"></div> -->
+    <div class="qr-invitation" onclick="showQrInvitation()">
+      <div class="d-flex justify-content-center gap-2 align-items-center">
+        <svg
+          class="svg-inline--fa fa-qrcode"
+          width="1em"
+          height="1em"
+          aria-hidden="true"
+          focusable="false"
+          data-prefix="fas"
+          data-icon="qrcode"
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+          data-fa-i2svg=""
+        >
+          <path
+            fill="currentColor"
+            d="M0 80C0 53.5 21.5 32 48 32l96 0c26.5 0 48 21.5 48 48l0 96c0 26.5-21.5 48-48 48l-96 0c-26.5 0-48-21.5-48-48L0 80zM64 96l0 64 64 0 0-64L64 96zM0 336c0-26.5 21.5-48 48-48l96 0c26.5 0 48 21.5 48 48l0 96c0 26.5-21.5 48-48 48l-96 0c-26.5 0-48-21.5-48-48l0-96zm64 16l0 64 64 0 0-64-64 0zM304 32l96 0c26.5 0 48 21.5 48 48l0 96c0 26.5-21.5 48-48 48l-96 0c-26.5 0-48-21.5-48-48l0-96c0-26.5 21.5-48 48-48zm80 64l-64 0 0 64 64 0 0-64zM256 304c0-8.8 7.2-16 16-16l64 0c8.8 0 16 7.2 16 16s7.2 16 16 16l32 0c8.8 0 16-7.2 16-16s7.2-16 16-16s16 7.2 16 16l0 96c0 8.8-7.2 16-16 16l-64 0c-8.8 0-16-7.2-16-16s-7.2-16-16-16s-16 7.2-16 16l0 64c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-160zM368 480a16 16 0 1 1 0-32 16 16 0 1 1 0 32zm64 0a16 16 0 1 1 0-32 16 16 0 1 1 0 32z"
+          ></path>
+        </svg>
+        <p class="m-0">QR Invitation For</p>
+      </div>
+      <div class="text-secondary text-center">Shafa Dimas Saputra</div>
+      <div class="qr-image mt-1">
+        <img src="assets/img/qr.png" alt="qr-image" class="img-fluid" />
+      </div>
+    </div>
+
+    <section class="cover-large" data-aos="fade-down">
+      <h2 class="header-2 font-body cover-subtitle">
+        We cordially invite you to our wedding
+      </h2>
+      <h1 class="header-1 font-heading cover-name">Fulan</h1>
+      <h1 class="header-1 font-heading cover-ampersand">&</h1>
+      <h1 class="header-1 font-heading cover-name">Fulanah</h1>
+    </section>
+
+    <section class="main" id="main">
+      <img src="assets/img/bg-main.jpeg" class="main-bg img-grey" alt="" />
+      <section id="welcome" class="custom-container" data-aos="fade-down">
+        <div class="welcome-container">
+          <div>
+            <p class="welcome-label">Dear</p>
+            <h2 class="welcome-guest-name">Mr Guest</h2>
+          </div>
+
+          <div>
+            <p class="welcome-invite-text">
+              We cordially invite you to our wedding
+            </p>
+            <h1 class="welcome-couple-name">Fulan</h1>
+            <p class="welcome-ampersand">&</p>
+            <h1 class="welcome-couple-name">Fulanah</h1>
+            <button
+              class="btn btn-invites d-block mt-4"
+              onclick="openInvites()"
+            >
+              Buka Undangan
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="content-wedding">
+        <!-- The Groom -->
+        <section class="couple-card" data-aos="fade-up">
+          <img
+            src="assets/img/couple-man.png"
+            alt="The Groom"
+            class="couple-card-bg"
+          />
+          <div class="couple-card-overlay"></div>
+          <div class="couple-card-title">
+            <h2 class="couple-card-heading">The Groom</h2>
+          </div>
+          <div class="couple-card-info">
+            <h1 class="couple-card-name">Fulan</h1>
+            <p class="couple-card-fullname">Fullname of Mr. Fulan</p>
+            <p class="couple-card-parents">First son of</p>
+            <p class="couple-card-parents">Mr. Fulan</p>
+            <p class="couple-card-parents">&</p>
+            <p class="couple-card-parents">Mrs. Ibu Fulan</p>
+            <a href="#" class="couple-card-social">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </div>
+        </section>
+
+        <!-- The Bride -->
+        <section class="couple-card" data-aos="fade-up">
+          <img
+            src="assets/img/couple-girl.png"
+            alt="The Bride"
+            class="couple-card-bg"
+          />
+          <div class="couple-card-overlay"></div>
+          <div class="couple-card-title">
+            <h2 class="couple-card-heading">The Bride</h2>
+          </div>
+          <div class="couple-card-info">
+            <h1 class="couple-card-name">Fulanah</h1>
+            <p class="couple-card-fullname">Fullname of Mrs. Fulanah</p>
+            <p class="couple-card-parents">First daughter of</p>
+            <p class="couple-card-parents">Mr. Fulanah</p>
+            <p class="couple-card-parents">&</p>
+            <p class="couple-card-parents">Mrs. Ibu Fulanah</p>
+            <a href="#" class="couple-card-social">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </div>
+        </section>
+
+        <section id="countdown" class="countdown-new" data-aos="fade-down">
+          <!-- Dark Overlay -->
+          <div class="countdown-overlay"></div>
+
+          <!-- Top Content: Names + Subtitle -->
+          <div class="countdown-top">
+            <h1 class="countdown-couple-name">Fulan & Fulanah</h1>
+            <p class="countdown-subtitle">Save the date</p>
+          </div>
+
+          <!-- Scroll Chevron -->
+          <div class="countdown-chevron">
+            <i class="bi bi-chevron-compact-down"></i>
+            <i class="bi bi-chevron-compact-down"></i>
+            <i class="bi bi-chevron-compact-down"></i>
+          </div>
+
+          <!-- Bottom Content: Countdown + Button -->
+          <div class="countdown-bottom">
+            <div class="countdown-numbers">
+              <div class="countdown-item">
+                <span class="countdown-num">00</span>
+                <span class="countdown-label">Days</span>
+              </div>
+              <div class="countdown-item">
+                <span class="countdown-num">00</span>
+                <span class="countdown-label">Hours</span>
+              </div>
+              <div class="countdown-item">
+                <span class="countdown-num">00</span>
+                <span class="countdown-label">Mins</span>
+              </div>
+              <div class="countdown-item">
+                <span class="countdown-num">00</span>
+                <span class="countdown-label">Secs</span>
+              </div>
+            </div>
+
+            <button class="btn-save-date mt-3">
+              <i class="bi bi-calendar3"></i>
+              Save the Date
+            </button>
+          </div>
+        </section>
+
+        <section id="wedding-day" class="venue-section" data-aos="fade-down">
+          <!-- Venue Title -->
+          <h2 class="venue-title">The Wedding Day</h2>
+
+          <!-- Ceremony -->
+          <div class="venue-event" data-aos="fade-up">
+            <h3 class="venue-event-label">CEREMONY</h3>
+            <div class="venue-date-row">
+              <span class="venue-date-big">20</span>
+              <div class="venue-date-detail">
+                <span class="venue-day">Saturday,</span>
+                <span class="venue-month">May 2022</span>
+              </div>
+              <span class="venue-date-line"></span>
+              <span class="venue-time">13:30 - 16:00 WIB</span>
+            </div>
+          </div>
+
+          <!-- Venue Location -->
+          <div class="venue-location" data-aos="fade-up">
+            <h3 class="venue-place-name">Bangil, Pasuruan</h3>
+            <p class="venue-address">
+              Sudirman Central Business District 8, Senayan, Kec. Kby. Baru,
+              Daerah Khusus Ibukota Jakarta
+            </p>
+            <button class="btn-save-date mt-2">
+              <i class="bi bi-geo-alt"></i>
+              View Maps
+            </button>
+          </div>
+        </section>
+
+        <section
+          id="our-story"
+          class="d-flex justify-content-center flex-column align-items-center position-relative"
+          data-aos="fade-up"
+        >
+          <h1 class="font-heading-latin-2 our-story-font">Our Story</h1>
+          <br />
+          <div class="story-wrapper">
+            <div class="timeline-line"></div>
+
+            <div class="story-card js-reveal">
+              <span class="dot"></span>
+              <img src="assets/img/prewedding/2.jpg" class="story-img" />
+              <div class="p-3">
+                <h3 class="font-heading3">Awal Pertemuan</h3>
+                <p class="story-text">
+                  Kami bertemu dan berkenalan pada tahun 2019 di sebuah cafe di
+                  kota Bogor...
+                </p>
+              </div>
+            </div>
+
+            <div class="story-card js-reveal">
+              <span class="dot"></span>
+              <img src="assets/img/prewedding/3.jpg" class="story-img" />
+              <div class="p-3">
+                <h3 class="font-heading3">Ta'aruf</h3>
+                <p class="story-text">
+                  Kami melakukan ta'aruf pada bulan Januari 2020 di rumah
+                  Dimas...
+                </p>
+              </div>
+            </div>
+
+            <div class="story-card js-reveal">
+              <span class="dot"></span>
+              <img src="assets/img/prewedding/3.jpg" class="story-img" />
+              <div class="p-3">
+                <h3 class="font-heading3">Lamaran</h3>
+                <p class="story-text">
+                  Kami melakukan lamaran pada bulan Februari 2021 di rumah
+                  Dimas...
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="gallery"
+          class="d-flex justify-content-center mt-5 flex-column align-items-center"
+          data-aos="fade-up"
+        >
+          <h1 class="font-heading-latin-1 text-light">Gallery</h1>
+          <br />
+          <div class="row g-2 m-0 mx-md-2 position-relative z-3">
+            <div class="col-md-12 gallery-item">
+              <a
+                href="assets/img/prewedding/1.jpg"
+                data-fancybox="gallery"
+                data-caption="Caption #1"
+              >
+                <img
+                  src="assets/img/prewedding/1.jpg"
+                  alt="Image 1"
+                  class="gallery-img"
+                />
+              </a>
+            </div>
+            <div class="col-md-12 gallery-item">
+              <div class="row g-2">
+                <div class="col-8 gallery-item">
+                  <a
+                    href="assets/img/prewedding/6.jpg"
+                    data-fancybox="gallery"
+                    data-caption="Caption #1"
+                  >
+                    <img
+                      src="assets/img/prewedding/6.jpg"
+                      alt="Image 1"
+                      class="gallery-img"
+                    />
+                  </a>
+                </div>
+                <div class="col-4 gallery-item">
+                  <a
+                    href="assets/img/prewedding/2.jpg"
+                    data-fancybox="gallery"
+                    data-caption="Caption #1"
+                  >
+                    <img
+                      src="assets/img/prewedding/2.jpg"
+                      alt="Image 1"
+                      class="gallery-img"
+                    />
+                  </a>
+                </div>
+                <div class="col-4 gallery-item">
+                  <a
+                    href="assets/img/prewedding/3.jpg"
+                    data-fancybox="gallery"
+                    data-caption="Caption #1"
+                  >
+                    <img
+                      src="assets/img/prewedding/3.jpg"
+                      alt="Image 1"
+                      class="gallery-img"
+                    />
+                  </a>
+                </div>
+                <div class="col-8 gallery-item">
+                  <a
+                    href="assets/img/prewedding/4.jpg"
+                    data-fancybox="gallery"
+                    data-caption="Caption #1"
+                  >
+                    <img
+                      src="assets/img/prewedding/4.jpg"
+                      alt="Image 1"
+                      class="gallery-img"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="video" data-aos="fade-down">
+          <br />
+          <div class="video">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/evjZQ-Fn_aQ?si=z-4S4cpvpN9iTQ6L"
+              title="YouTube video player"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+        </section>
+
+        <section id="attendance">
+          <section
+            id="reservation"
+            class="custom-container"
+            data-aos="fade-right"
+          >
+            <h1 class="font-heading-latin-3">Reservation</h1>
+            <div class="form-container">
+              <div class="form-floating w-100">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  placeholder="Name"
+                />
+                <label for="name">Name</label>
+              </div>
+
+              <div class="form-floating mt-1 w-100">
+                <select
+                  class="form-select"
+                  id="status"
+                  name="status"
+                  aria-label="status"
+                >
+                  <option selected>Apakah kamu akan hadir?</option>
+                  <option value="iya">Ya, aku akan hadir.</option>
+                  <option value="tidak">Tidak, saya tidak bisa hadir.</option>
+                </select>
+                <label for="status">Works with selects</label>
+              </div>
+
+              <button
+                type="submit"
+                class="btn btn-invites w-100"
+                style="z-index: 10"
+              >
+                Send <i class="bi bi-send"></i>
+              </button>
+            </div>
+          </section>
+
+          <section id="comment" class="custom-container" data-aos="fade-left">
+            <h1 class="font-heading-latin-3">Comment</h1>
+            <div class="form-comment-container">
+              <div class="form-floating w-100">
+                <input
+                  type="text"
+                  id="gvyw"
+                  name="comment"
+                  class="form-control"
+                  placeholder="Give your wish"
+                />
+                <label for="gvyw">Comment</label>
+              </div>
+              <button type="submit" class="btn btn-invites w-100">
+                Send <i class="bi bi-send"></i>
+              </button>
+            </div>
+            <div class="comment-container">
+              <div class="comment-item">
+                <div class="sender">Shafa</div>
+                <div class="time">11 Feb 2025, 22:05</div>
+                <div class="content">
+                  lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloremque, voluptas, quia, doloremque voluptatem, voluptate,
+                  quisquam, doloribus, asperiores, fugiat, laboriosam, quos
+                </div>
+              </div>
+              <div class="comment-item">
+                <div class="sender">Shafa</div>
+                <div class="time">11 Feb 2025, 22:05</div>
+                <div class="content">
+                  lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloremque, voluptas, quia, doloremque voluptatem, voluptate,
+                  quisquam, doloribus, asperiores, fugiat, laboriosam, quos
+                </div>
+              </div>
+              <div class="comment-item">
+                <div class="sender">Shafa</div>
+                <div class="time">11 Feb 2025, 22:05</div>
+                <div class="content">
+                  lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloremque, voluptas, quia, doloremque voluptatem, voluptate,
+                  quisquam, doloribus, asperiores, fugiat, laboriosam, quos
+                </div>
+              </div>
+            </div>
+            <div class="comment-container">
+              <button type="button" class="btn btn-invites w-100">
+                Show more comments <i class="bi bi-plus-circle"></i>
+              </button>
+            </div>
+          </section>
+        </section>
+
+        <section
+          id="wedding-gift"
+          class="custom-container"
+          data-aos="fade-down"
+        >
+          <div class="wg-container">
+            <h1 class="font-heading-latin-3">Wedding Gift</h1>
+            <div class="text-body-2">
+              Your blessing and coming to our wedding are enough for us.
+              However, if you want to give a gift we provide a Digital Envelope
+              to make it easier for you. thank you
+            </div>
+            <hr class="w-100" />
+            <div class="form-container w-100">
+              <ul
+                class="nav nav-tabs flex justify-content-center"
+                id="wg-nav-tab"
+                role="tablist"
+              >
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="home-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#bank"
+                    type="button"
+                    role="tab"
+                    aria-controls="home"
+                    aria-selected="true"
+                  >
+                    E-Angpao
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="profile-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#profile"
+                    type="button"
+                    role="tab"
+                    aria-controls="profile"
+                    aria-selected="false"
+                  >
+                    Gift Registry
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="wg-tab">
+                <div
+                  class="tab-pane fade show active"
+                  id="bank"
+                  role="tabpanel"
+                  aria-labelledby="home-tab"
+                >
+                  <div class="reservation-status w-100">
+                    <div class="card-wg mt-3">
+                      <div>
+                        <p><b>BANK BCA</b></p>
+                        <p>Account Number</p>
+                        <p>1234567890</p>
+                      </div>
+                      <img
+                        src="assets/img/qr.png"
+                        style="width: 91px"
+                        alt="qr-bank"
+                      />
+                    </div>
+                    <hr />
+                  </div>
+
+                  <div class="form-bank">
+                    <div class="input-group">
+                      <span class="input-group-text custom-input">
+                        <i class="bi bi-person"></i>
+                        <!-- Bootstrap Icons -->
+                      </span>
+                      <input
+                        type="text"
+                        id="bank-name"
+                        name="bank-name"
+                        class="form-control custom-input"
+                        placeholder="Name"
+                      />
+                    </div>
+                    <div class="input-group mt-1">
+                      <span class="input-group-text custom-input">
+                        <i class="bi bi-cash"></i>
+                        <!-- Bootstrap Icons -->
+                      </span>
+                      <input
+                        type="text"
+                        id="bank-amounr"
+                        name="bank-amounr"
+                        class="form-control custom-input"
+                        placeholder="Jumlah Rp."
+                      />
+                    </div>
+                    <div class="input-group mt-1">
+                      <span class="input-group-text custom-input">
+                        <i class="bi bi-envelope"></i>
+                        <!-- Bootstrap Icons -->
+                      </span>
+                      <input
+                        type="email"
+                        id="bank-email"
+                        name="bank-email"
+                        class="form-control custom-input"
+                        placeholder="Email"
+                      />
+                    </div>
+                    <button
+                      type="submit"
+                      class="btn-invites mt-3 mx-auto d-block w-100"
+                    >
+                      Send <i class="bi bi-send"></i>
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="profile"
+                  role="tabpanel"
+                  aria-labelledby="profile-tab"
+                >
+                  <p class="text-center p-3 text-body-2">
+                    Anda bisa memberikan hadiah melalui website ini. Klik
+                    Hadiahkan, setelah itu akan muncul pop up form, isi form
+                    data pengirim dan anda akan di email oleh sistem untuk
+                    detailnya. Biaya pengiriman akan dibebankan kepada tamu
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-invites w-100"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-wg"
+                  >
+                    <i class="bi bi-gift-fill"></i> Open Gift
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="quote" class="custom-container" data-aos="fade-down">
+          <div class="quote-container">
+            <div class="text-body-2 text-light">
+              "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
+              pasangan-pasangan untukmu dari jenismu sendiri, agar kamu
+              cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di
+              antaramu rasa kasih dan sayang."
+            </div>
+            <div
+              class="font-heading3 text-light surah"
+              style="margin-left: 70px"
+            >
+              (QS. Ar-Rum: 21)
+            </div>
+          </div>
+        </section>
+
+        <section id="thanks" data-aos="fade-down">
+          <div class="custom-container" data-aos="fade-down">
+            <div class="thanks-frame">
+              <div class="custom-container thanks-content">
+                <div class="thanks-bottom">
+                  <p
+                    class="text-body-5"
+                    style="
+                      margin-top: 200px;
+                      font-weight: 900 !important;
+                      font-size: 18px;
+                    "
+                  >
+                    It is a pleasure and honor for us, if you are willing to
+                    attend and give us your blessing.
+                  </p>
+                  <h1
+                    class="header-1 font-heading"
+                    style="margin-top: 30px; font-weight: 900 !important"
+                  >
+                    Fulan <br />&amp;<br />
+                    Fulanah
+                  </h1>
+                  <img
+                    src="assets/img/bg-flower/5.png"
+                    style="
+                      height: 617px;
+                      position: absolute;
+                      bottom: -161px;
+                      left: 0;
+                    "
+                    alt=""
+                  />
+                </div>
+                <!-- <img src="assets/img/footer.webp" alt="" /> -->
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="footer-right" class="custom-container">
+          <div class="text-body-2 text-light">
+            <b>Designed by meirahmawati</b>
+          </div>
+          <div class="social-media my-2">
+            <a href="" class="invites-icon" style="color: #965458 !important">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="" class="invites-icon" style="color: #965458 !important">
+              <i class="bi bi-globe"></i>
+            </a>
+            <a href="" class="invites-icon" style="color: #965458 !important">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+          </div>
+          <div class="text-body-2 text-light">
+            <b> © meirahmawati. All rights reserved. </b>
+          </div>
+        </section>
+      </section>
+    </section>
+
+    <section
+      class="music-outer aos-init aos-animate"
+      data-aos="fade-right"
+      data-aos-duration="1000"
+      data-aos-delay="300"
+    >
+      <!-- <audio id="background-music" src="assets/music/music.mp3" autoplay loop></audio> -->
+      <!-- <audio id="background-music" src="assets/music/music.mp3"></audio> -->
+      <div class="music-box auto" id="music-box"></div>
+    </section>
+
+    <div
+      class="modal fade"
+      id="modal-wg"
+      tabindex="-1"
+      aria-labelledby="modal-wg"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content" style="background-color: #f3f1e9">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex justify-content-center flex-wrap gap-2">
+              <div class="card bg-wg">
+                <img
+                  src="assets/img/Water-Boiler-Fomac.png"
+                  class="card-img-top"
+                  alt="image wg gift"
+                />
+                <div class="card-body">
+                  <p class="card-title text-bold text-white">
+                    Water Boiler Fomac
+                  </p>
+                  <p class="card-text text-white">Rp. 370.000</p>
+                  <a href="#" class="btn btn-invites w-100">Give as a give</a>
+                </div>
+              </div>
+              <div class="card bg-wg">
+                <img
+                  src="assets/img/Water-Boiler-Fomac.png"
+                  class="card-img-top"
+                  alt="image wg gift"
+                />
+                <div class="card-body">
+                  <p class="card-title text-bold text-white">
+                    Water Boiler Fomac
+                  </p>
+                  <p class="card-text text-white">Rp. 370.000</p>
+                  <a href="#" class="btn btn-invites w-100">Give as a give</a>
+                </div>
+              </div>
+              <div class="card bg-wg">
+                <img
+                  src="assets/img/Water-Boiler-Fomac.png"
+                  class="card-img-top"
+                  alt="image wg gift"
+                />
+                <div class="card-body">
+                  <p class="card-title text-bold text-white">
+                    Water Boiler Fomac
+                  </p>
+                  <p class="card-text text-white">Rp. 370.000</p>
+                  <a href="#" class="btn btn-invites w-100">Give as a give</a>
+                </div>
+              </div>
+              <div class="card bg-wg">
+                <img
+                  src="assets/img/Water-Boiler-Fomac.png"
+                  class="card-img-top"
+                  alt="image wg gift"
+                />
+                <div class="card-body">
+                  <p class="card-title text-bold text-white">
+                    Water Boiler Fomac
+                  </p>
+                  <p class="card-text text-white">Rp. 370.000</p>
+                  <a href="#" class="btn btn-invites w-100">Give as a give</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+      const revealItems = document.querySelectorAll(".js-reveal");
+
+      function revealOnScroll() {
+        revealItems.forEach((item) => {
+          const pos = item.getBoundingClientRect().top;
+          if (pos < window.innerHeight - 120) item.classList.add("reveal");
+        });
+      }
+
+      window.addEventListener("scroll", revealOnScroll);
+      window.addEventListener("load", revealOnScroll);
+    </script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <!-- <script src="assets/js/snow.js"></script> -->
+    <!-- <script
+      src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+      type="module"
+    ></script> -->
+    <script src="assets/js/dotlottie-player.js"></script>
+    <script src="assets/js/loader.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
