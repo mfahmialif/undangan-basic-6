@@ -52,21 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // $("html, body").animate({ scrollTop: 0 }, 800); // Durasi 800ms
   // contentWedding.style.display = "none"; // Hide
 
-  var splideCountdown = new Splide("#splide-countdown", {
-    perPage: 1,
-    focus: "center",
-    // type: "loop",
-    pagination: false, // ⛔ pagination dimatikan
-    arrows: false,
-    lazyLoad: "sequential",
-    interval: 4000,
-    speed: 5000,
-    autoplay: true, // ▶ autoplay aktif
-    drag: false, // 🛑 tidak bisa drag dengan mouse
-    swipe: false, // 🛑 tidak bisa swipe di HP
-  });
-
-  splideCountdown.mount();
+  // Splide countdown removed (new countdown design)
 
   Fancybox.bind("[data-fancybox]", {});
 });
@@ -98,8 +84,8 @@ function showQrInvitation() {
 }
 
 function ourStoryScroll() {
-  const timelineLine = document.querySelector(".timeline-line");
-  const storyCards = document.querySelectorAll(".story-card.js-reveal");
+  const timelineLine = document.querySelector(".story-timeline-line");
+  const storyCards = document.querySelectorAll(".story-card-dark.js-reveal");
 
   if (!timelineLine || storyCards.length === 0) {
     return;
@@ -125,7 +111,7 @@ function ourStoryScroll() {
     // 2. END SCROLL POINT (Kapan garis terisi 100%)
     // Kita ingin garis terisi penuh saat dot terakhir sudah melewati bagian atas layar.
     // Kita gunakan offset 0.1 (10% dari atas layar).
-    const lastDot = lastCard.querySelector(".dot");
+    const lastDot = lastCard.querySelector(".story-card-dot");
     const lastDotTop = lastDot
       ? lastDot.getBoundingClientRect().top + window.scrollY
       : lastCard.getBoundingClientRect().top + window.scrollY;
