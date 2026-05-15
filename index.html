@@ -518,26 +518,26 @@
 
         <section
           id="wedding-gift"
-          class="custom-container"
+          class="gift-section-dark"
           data-aos="fade-down"
         >
-          <div class="wg-container">
-            <h1 class="font-heading-latin-3">Wedding Gift</h1>
-            <div class="text-body-2">
+          <div class="wg-container-dark">
+            <h1 class="wg-title-dark">Wedding Gift</h1>
+            <div class="wg-text-dark">
               Your blessing and coming to our wedding are enough for us.
               However, if you want to give a gift we provide a Digital Envelope
               to make it easier for you. thank you
             </div>
-            <hr class="w-100" />
-            <div class="form-container w-100">
+            <hr class="wg-hr-dark w-100" />
+            <div class="form-container w-100 p-0">
               <ul
-                class="nav nav-tabs flex justify-content-center"
+                class="nav nav-tabs flex justify-content-center wg-nav-dark w-100 border-0"
                 id="wg-nav-tab"
                 role="tablist"
               >
                 <li class="nav-item" role="presentation">
                   <button
-                    class="nav-link active"
+                    class="nav-link active border-0"
                     id="home-tab"
                     data-bs-toggle="tab"
                     data-bs-target="#bank"
@@ -551,7 +551,7 @@
                 </li>
                 <li class="nav-item" role="presentation">
                   <button
-                    class="nav-link"
+                    class="nav-link border-0"
                     id="profile-tab"
                     data-bs-toggle="tab"
                     data-bs-target="#profile"
@@ -564,7 +564,7 @@
                   </button>
                 </li>
               </ul>
-              <div class="tab-content" id="wg-tab">
+              <div class="tab-content w-100 mt-3" id="wg-tab">
                 <div
                   class="tab-pane fade show active"
                   id="bank"
@@ -572,7 +572,7 @@
                   aria-labelledby="home-tab"
                 >
                   <div class="reservation-status w-100">
-                    <div class="card-wg mt-3">
+                    <div class="card-wg-dark">
                       <div>
                         <p><b>BANK BCA</b></p>
                         <p>Account Number</p>
@@ -580,58 +580,54 @@
                       </div>
                       <img
                         src="assets/img/qr.png"
-                        style="width: 91px"
+                        style="width: 80px; filter: invert(1) opacity(0.8);"
                         alt="qr-bank"
                       />
                     </div>
-                    <hr />
                   </div>
 
-                  <div class="form-bank">
-                    <div class="input-group">
-                      <span class="input-group-text custom-input">
+                  <div class="form-bank mt-3">
+                    <div class="input-group mb-2">
+                      <span class="input-group-text custom-input-dark border-end-0">
                         <i class="bi bi-person"></i>
-                        <!-- Bootstrap Icons -->
                       </span>
                       <input
                         type="text"
                         id="bank-name"
                         name="bank-name"
-                        class="form-control custom-input"
+                        class="form-control custom-input-dark border-start-0"
                         placeholder="Name"
                       />
                     </div>
-                    <div class="input-group mt-1">
-                      <span class="input-group-text custom-input">
+                    <div class="input-group mb-2">
+                      <span class="input-group-text custom-input-dark border-end-0">
                         <i class="bi bi-cash"></i>
-                        <!-- Bootstrap Icons -->
                       </span>
                       <input
                         type="text"
                         id="bank-amounr"
                         name="bank-amounr"
-                        class="form-control custom-input"
+                        class="form-control custom-input-dark border-start-0"
                         placeholder="Jumlah Rp."
                       />
                     </div>
-                    <div class="input-group mt-1">
-                      <span class="input-group-text custom-input">
+                    <div class="input-group mb-3">
+                      <span class="input-group-text custom-input-dark border-end-0">
                         <i class="bi bi-envelope"></i>
-                        <!-- Bootstrap Icons -->
                       </span>
                       <input
                         type="email"
                         id="bank-email"
                         name="bank-email"
-                        class="form-control custom-input"
+                        class="form-control custom-input-dark border-start-0"
                         placeholder="Email"
                       />
                     </div>
                     <button
                       type="submit"
-                      class="btn-invites mt-3 mx-auto d-block w-100"
+                      class="btn w-100 btn-wg-dark"
                     >
-                      Send <i class="bi bi-send"></i>
+                      Send <i class="bi bi-send ms-1"></i>
                     </button>
                   </div>
                 </div>
@@ -641,7 +637,7 @@
                   role="tabpanel"
                   aria-labelledby="profile-tab"
                 >
-                  <p class="text-center p-3 text-body-2">
+                  <p class="text-center wg-text-dark px-2">
                     Anda bisa memberikan hadiah melalui website ini. Klik
                     Hadiahkan, setelah itu akan muncul pop up form, isi form
                     data pengirim dan anda akan di email oleh sistem untuk
@@ -649,11 +645,11 @@
                   </p>
                   <button
                     type="button"
-                    class="btn btn-invites w-100"
+                    class="btn w-100 btn-wg-dark"
                     data-bs-toggle="modal"
                     data-bs-target="#modal-wg"
                   >
-                    <i class="bi bi-gift-fill"></i> Open Gift
+                    <i class="bi bi-gift-fill me-1"></i> Open Gift
                   </button>
                 </div>
               </div>
@@ -661,80 +657,52 @@
           </div>
         </section>
 
-        <section id="quote" class="custom-container" data-aos="fade-down">
-          <div class="quote-container">
-            <div class="text-body-2 text-light">
+        <section id="quote" class="quote-section-dark" data-aos="fade-down">
+          <div class="quote-container-dark">
+            <div class="quote-text-dark">
               "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
               pasangan-pasangan untukmu dari jenismu sendiri, agar kamu
               cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di
               antaramu rasa kasih dan sayang."
             </div>
-            <div
-              class="font-heading3 text-light surah"
-              style="margin-left: 70px"
-            >
+            <div class="quote-surah-dark">
               (QS. Ar-Rum: 21)
             </div>
           </div>
         </section>
 
-        <section id="thanks" data-aos="fade-down">
-          <div class="custom-container" data-aos="fade-down">
-            <div class="thanks-frame">
-              <div class="custom-container thanks-content">
-                <div class="thanks-bottom">
-                  <p
-                    class="text-body-5"
-                    style="
-                      margin-top: 200px;
-                      font-weight: 900 !important;
-                      font-size: 18px;
-                    "
-                  >
-                    It is a pleasure and honor for us, if you are willing to
-                    attend and give us your blessing.
-                  </p>
-                  <h1
-                    class="header-1 font-heading"
-                    style="margin-top: 30px; font-weight: 900 !important"
-                  >
-                    Fulan <br />&amp;<br />
-                    Fulanah
-                  </h1>
-                  <img
-                    src="assets/img/bg-flower/5.png"
-                    style="
-                      height: 617px;
-                      position: absolute;
-                      bottom: -161px;
-                      left: 0;
-                    "
-                    alt=""
-                  />
-                </div>
-                <!-- <img src="assets/img/footer.webp" alt="" /> -->
-              </div>
-            </div>
+        <section id="thanks" class="thanks-section-dark">
+          <img src="assets/img/prewedding/4.jpg" class="thanks-bg-image" alt="">
+          <div class="thanks-overlay"></div>
+          <div class="thanks-content-dark" data-aos="zoom-in">
+            <p class="thanks-text-dark">
+              It is a pleasure and honor for us, if you are willing to
+              attend and give us your blessing.
+            </p>
+            <h1 class="thanks-names-dark">
+              Fulan <br /><span style="font-family: 'pinyon', cursive; font-size: 3rem; color: rgba(255,255,255,0.5);">&amp;</span><br />
+              Fulanah
+            </h1>
           </div>
         </section>
 
-        <section id="footer-right" class="custom-container">
-          <div class="text-body-2 text-light">
-            <b>Designed by meirahmawati</b>
+        <section id="footer-right" class="footer-dark">
+          <div class="footer-text-dark mb-2">
+            Designed by meirahmawati
           </div>
-          <div class="social-media my-2">
-            <a href="" class="invites-icon" style="color: #965458 !important">
+          <div class="footer-social-dark">
+            <a href="#">
               <i class="bi bi-instagram"></i>
             </a>
-            <a href="" class="invites-icon" style="color: #965458 !important">
+            <a href="#">
               <i class="bi bi-globe"></i>
             </a>
-            <a href="" class="invites-icon" style="color: #965458 !important">
+            <a href="#">
               <i class="bi bi-whatsapp"></i>
             </a>
           </div>
-          <div class="text-body-2 text-light">
-            <b> © meirahmawati. All rights reserved. </b>
+          <div class="footer-text-dark">
+            © meirahmawati. All rights reserved.
           </div>
         </section>
       </section>

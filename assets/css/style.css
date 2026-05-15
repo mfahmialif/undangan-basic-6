@@ -1799,7 +1799,7 @@ body.meirahmawati {
 
 #footer-right {
   background-color: var(--background-primary);
-  padding: 50px 0;
+  /* padding: 50px 0; */
 }
 
 .social-media {
@@ -2425,3 +2425,257 @@ body.meirahmawati {
   }
 }
 
+/* ===== Wedding Gift Section (Dark Elegant) ===== */
+.gift-section-dark {
+  padding: 80px 20px;
+  /* background-color: #111; */
+  width: 100%;
+}
+
+.wg-container-dark {
+  width: 100%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px 30px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+}
+
+.wg-title-dark {
+  font-family: "iskri", cursive !important;
+  font-size: 2.2rem !important;
+  color: #fff !important;
+  font-weight: 400 !important;
+  text-align: center;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+.wg-text-dark {
+  font-family: "iskri", sans-serif !important;
+  font-size: 0.9rem !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.wg-hr-dark {
+  border-color: rgba(255, 255, 255, 0.2);
+  margin-bottom: 30px;
+}
+
+.wg-nav-dark {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50px;
+  padding: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.wg-nav-dark .nav-link {
+  color: rgba(255, 255, 255, 0.6) !important;
+  font-family: "iskri", sans-serif;
+  border-radius: 50px !important;
+  padding: 8px 20px;
+}
+
+.wg-nav-dark .nav-link.active {
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: #fff !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+.card-wg-dark {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.card-wg-dark p {
+  margin: 0;
+  font-family: "iskri", sans-serif;
+}
+
+.card-wg-dark b {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.custom-input-dark {
+  background: rgba(0, 0, 0, 0.3) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  color: #fff !important;
+}
+
+.custom-input-dark::placeholder {
+  color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.custom-input-dark:focus {
+  border-color: rgba(255, 255, 255, 0.5) !important;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1) !important;
+}
+
+.input-group-text.custom-input-dark {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.btn-wg-dark {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  border-radius: 50px;
+  padding: 10px 0;
+  font-family: "iskri", sans-serif;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.btn-wg-dark:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+/* ===== Quote Section (Dark Elegant) ===== */
+.quote-section-dark {
+  padding: 60px 20px;
+  /* background-color: #111; */
+  width: 100%;
+}
+
+.quote-container-dark {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px;
+  background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 30px;
+}
+
+.quote-text-dark {
+  font-family: "iskri", serif !important;
+  font-size: 1.2rem !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  line-height: 1.8 !important;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.quote-surah-dark {
+  font-family: "iskri", sans-serif !important;
+  font-size: 0.9rem !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* ===== Thanks Section (Dark Elegant) ===== */
+.thanks-section-dark {
+  position: relative;
+  padding: 100px 20px 80px;
+  background-color: #000;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.thanks-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+  filter: grayscale(100%);
+  z-index: 0;
+}
+
+.thanks-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #111 0%, transparent 50%, #000 100%);
+  z-index: 1;
+}
+
+.thanks-content-dark {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thanks-text-dark {
+  font-family: "iskri", sans-serif !important;
+  font-size: 0.95rem !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+  letter-spacing: 2px;
+  line-height: 1.6;
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+
+.thanks-names-dark {
+  font-family: "iskri", cursive !important;
+  font-size: 4rem !important;
+  color: #fff !important;
+  line-height: 1.1 !important;
+  text-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+/* ===== Footer Section (Dark Elegant) ===== */
+.footer-dark {
+  background-color: #050505;
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  width: 100%;
+}
+
+.footer-text-dark {
+  font-family: "iskri", sans-serif;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 1px;
+}
+
+.footer-social-dark {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.footer-social-dark a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-dark a:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  transform: translateY(-2px);
+}
