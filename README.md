@@ -1,38 +1,63 @@
+# Website Undangan - Basic 6
 
-# Website Undangan - Tema Basic 1
-
-## Deskripsi
-Website Undangan Tema Basic 1 dari PT Jadi Mudah Nusantara adalah sebuah platform digital yang dirancang untuk membantu pengguna dalam membuat undangan pernikahan secara online. Dengan desain elegan dan fitur yang lengkap, website ini memudahkan calon pengantin untuk berbagi informasi acara dengan keluarga dan teman.
+Template website undangan pernikahan statis berbasis HTML, CSS, dan JavaScript. Project ini bisa langsung dibuka dari `index.html` tanpa proses build.
 
 ## Fitur
-- **Desain Responsif**: Tampilan yang menyesuaikan dengan perangkat (desktop, tablet, dan smartphone).
-- **Galeri Foto**: Unggah dan tampilkan foto-foto prewedding.
-- **Hitung Mundur Acara**: Timer otomatis untuk menghitung mundur waktu hingga hari pernikahan.
-- **RSVP Online**: Tamu dapat mengonfirmasi kehadiran secara langsung.
-- **Musik Latar**: Menambahkan pengalaman lebih personal dengan musik pilihan.
-- **Video**: Tambahkan video prewedding atau momen spesial lainnya.
-- **Wedding Gift (Angpao Online)**: Memungkinkan tamu memberikan hadiah secara digital.
 
-## Struktur Proyek
+- Tampilan responsif untuk desktop dan mobile.
+- Cover undangan dan halaman pembuka.
+- Profil pasangan.
+- Countdown acara.
+- Detail akad dan resepsi.
+- Timeline Our Story.
+- Galeri foto dengan Fancybox.
+- Form reservasi dan komentar statis.
+- Wedding gift dan modal gift.
+- Quote, ucapan terima kasih, footer, QR invitation, dan tombol musik.
+
+## Struktur Project
+
+```text
+basic-6/
+|-- index.html
+|-- README.md
+|-- assets/
+    |-- css/
+    |   |-- aos.css
+    |   |-- loader.css
+    |   |-- splide.min.css
+    |   |-- style.css
+    |-- font/
+    |-- img/
+    |   |-- *.webp
+    |   |-- prewedding/
+    |       |-- *.webp
+    |-- js/
+        |-- aos.js
+        |-- dotlottie-player.js
+        |-- loader.js
+        |-- script.js
+        |-- splide.min.js
 ```
-undangan-tema2/
-│── index.html
-│── assets/
-│   ├── css/
-│   │   ├── style.css
-│   ├── js/
-│   │   ├── script.js
-│   ├── img/
-│       ├── (gambar undangan)
+
+## Menjalankan
+
+Buka `index.html` langsung di browser.
+
+Jika ingin menjalankan lewat local server:
+
+```bash
+npx serve .
 ```
 
-## Instalasi
-1. **Clone repository**
-   ```bash
-   git clone https://github.com/mfahmialif/undangan-5.git
-   ```
-2. **Buka file `index.html` di browser**
+## Catatan Aset
 
-## Teknologi yang Digunakan
-- **Frontend**: HTML, CSS, JavaScript
-- **Deployment**: Vercel
+- Semua gambar di `assets/img` memakai format `.webp`.
+- Ukuran tiap gambar dijaga maksimal 100KB.
+- Jika menambah gambar baru, konversi ke WebP dan update referensinya di `index.html` atau `assets/css/style.css`.
+
+## File Utama
+
+- `index.html`: struktur konten undangan.
+- `assets/css/style.css`: styling utama template.
+- `assets/js/script.js`: interaksi QR invitation, musik, animasi, dan timeline Our Story.

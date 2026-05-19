@@ -43,7 +43,7 @@
   --rgb-tertiary-clr: 144, 144, 144;
   --btn-default: #d4cfc2;
   --btn-default-rgb: 212, 207, 194;
-  --texture-body: url("../img/bg-main.jpeg");
+  --texture-body: url("../img/bg-main.webp");
   --heading-family: "iskri", serif;
   --heading-style: normal;
   --heading-weight: 550;
@@ -194,7 +194,7 @@ body.meirahmawati {
 #welcome {
   min-height: 100dvh;
   width: 100%;
-  background: url(../img/welcome-img.jpeg);
+  background: url(../img/welcome-img.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -248,7 +248,7 @@ body.meirahmawati {
   bottom: 0;
   position: fixed;
   width: 69.5%;
-  background-image: url("../img/bg-coverlarge.png");
+  background-image: url("../img/bg-coverlarge.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -969,7 +969,7 @@ body.meirahmawati {
   width: 60px;
   height: 60px;
   cursor: pointer;
-  background-image: url("../img/music.png");
+  background-image: url("../img/music.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
